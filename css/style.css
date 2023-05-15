@@ -1,0 +1,61 @@
+body {
+    background-color:black;
+    background-image:
+    radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+    radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+    radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+    radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+    background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+    background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: inline-flex;
+    justify-content: center;
+    margin: 0;
+}
+
+canvas {
+    width: 100vw;
+    height: 100vh;
+    z-index: -500;
+}
+
+#login-container {
+    padding: 2em ;
+    border-radius: 1.2em;
+    border: 0.3em black solid;
+    background-color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#login-inputs {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+}
+
+#login-container h1 {
+    max-width: 10em;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 1em;
+}
+
+#login-inputs button {
+    margin-top: 1.7em;
+    background-color: rgb(185, 185, 185);
+    border-radius: 1em;
+}
+
+#login-container img {
+    border-radius: 50%;
+    border: 0.2em black solid;
+    width: 10em;
+    margin-bottom: 1em;
+}
