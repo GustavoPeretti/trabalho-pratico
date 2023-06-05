@@ -5,9 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GuThai Agendas</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <canvas></canvas>
 
+    <div id="container">
+        <div id="title-content">
+            <div id="title">
+                <h2>Bem vindo usuário!</h2>
+                <p>Que tal fazer o seu login?</p>
+            </div>
+            <div id="content">
+                <div id="register">
+                    <div id="register-container">   
+                        <h3>Registro de atividades</h3>
+                        <div id="register-inputs">
+                            <label for="atividade">Atividade: </label><input type="text" name="atividade">
+                            <label for="ds">Dia da semana: </label><select name="ds" id="ds-select">
+                                <option value="segunda">Segunda-feira</option>
+                                <option value="terça">Terça-feira</option>
+                                <option value="quarta">Quarta-feira</option>
+                                <option value="quinta">Quinta-feira</option>
+                                <option value="sexta">Sexta-feira</option>
+                            </select>
+                            <label for="inicio">Início: </label><input type="time" name="inicio">
+                            <label for="fim">Fim: </label><input type="time" name="fim">
+                            <button id="cadastrar-button">Cadastrar</button> 
+                        </div>
+                    </div>
+                </div>
+                <div id="calendar">
+                    <img src="img/calendario.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://momentjs.com/downloads/moment.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"
+        integrity="sha512-jq8sZI0I9Og0nnZ+CfJRnUzNSDKxr/5Bvha5bn7AHzTnRyxUfpUArMzfH++mwE/hb2efOo1gCAgI+1RMzf8F7g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/particles.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

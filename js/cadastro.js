@@ -5,7 +5,7 @@ document.querySelector('#login-inputs button').addEventListener('click', () => {
     let area = document.querySelector('#area').value;
     let horas = parseInt(document.querySelector('#horas').value);
 
-    if (isNaN(horas) || siape == '' || area == '' || !((/^(\d{7,8})$/).test(siape)) || !(/^[^\s@]+@[^\s@]+\.[^\s@]+$/).test(email)) {
+    if (isNaN(horas) || siape == '' || area == '' || !((/^(\d{7,8})$/).test(siape)) || !(/^[^\s@]+@[^\s@]+\.[^\s@]+$/).test(email) || horas != 40 || horas != 20) {
         alert('Algum valor foi digitado incorretamente, envie os dados novamente.');
         return;
     }

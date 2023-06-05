@@ -17,6 +17,7 @@ canvas {
     width: 100vw;
     height: 100vh;
     z-index: -500;
+    position: fixed;
 }
 
 #login-container {
@@ -58,4 +59,85 @@ canvas {
     border: 0.2em black solid;
     width: 10em;
     margin-bottom: 1em;
+}
+
+#title-content {
+    background-color: white;
+    border: 0.2em black solid;
+    border-radius: 1em;
+    width: 80vw;
+    height: 80vh;
+}
+
+#content {
+    border-radius: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#title h2 {
+    margin-bottom: -10px;
+}
+
+#title p {
+    margin-bottom: 2em;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+#calendar img {
+    width: 30em;
+    height: 25em;
+    border-radius: 1em;
+}
+
+#calendar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#content > * {
+    width: 50%;
+}
+
+#register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+}
+
+#register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 0.1em black solid;
+    border-radius: 1em;
+    padding: 2em;
+}
+
+#register-inputs {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#register-inputs button {
+    margin-top: 1.5em;
 }
